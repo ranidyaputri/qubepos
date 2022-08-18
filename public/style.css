@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/font/Poppins-Regular.ttf);
+}
+.btn-qube{
+    background-color: #FE8767;
+    color: white;
+    padding: 8px 30px;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins';
+}
+/* login dan register */
+.auth-txt{
+    font-weight: 600;
+}
+.auth{
+    margin-top: 50px;
+}
+@media only screen and (max-width: 747px){
+    .auth-left{
+        content-visibility: hidden;
+    }
+}
