@@ -19,7 +19,40 @@ body{
     margin-top: 50px;
 }
 @media only screen and (max-width: 747px){
-    .auth-left{
+    .auth-left, .landing-page{
         content-visibility: hidden;
     }
+}
+
+/* dev yaya */
+.navbar-qube {
+    height: 100px;
+}
+
+/* welcome page */
+.home {
+    margin-right: 140px;
+    margin-top: 60px;
+}
+
+.home .heading {
+    font-size: 40px;
+}
+
+.home-wrapper .heading span {
+    background-color: #FFD666;
+    margin-left:20px;
+}
+
+.home .subheading {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.btn-mulai{
+    margin-top: 20px;
+}
+
+body {
+    background-color: #fff;
 }
