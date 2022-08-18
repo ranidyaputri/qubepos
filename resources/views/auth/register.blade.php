@@ -2,16 +2,16 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-6 col-md-6 col-sm-12 register-left">
+    <div class="row justify-content-center align-items-center auth">
+        <div class="col-6 col-md-6 col-sm-12 auth-left">
             <img src="{{('assets/img/login-img.png')}}" width="400px">
         </div>
-        <div class="col-6 col-md-6 col-sm-12 register-right">
+        <div class="col-6 col-md-6 col-sm-12 auth-right">
             <div class="row justify-content-center align-items-center">
-                <div class="col-8">
+                <div class="col-9">
                     <div class="header">
-                        <img src="{{('assets/img/logotype.svg')}}" width="86px">
-                        <h2 class="mt-3">Registrasi akun QubePOS</h2>
+                        <!-- <img src="{{('assets/img/logotype.svg')}}" width="86px"> -->
+                        <h2 class="mt-3 auth-txt">Registrasi akun QubePOS</h2>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -25,7 +25,7 @@
                         @enderror
 
                         <!-- input email -->
-                        <label for="email" class="mt-3 mb-2">{{ __('Email Address') }}</label>
+                        <label for="email" class="mt-3 mb-2">{{ __('Alamat Email') }}</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="masukkan alamat email">
                         @error('email')
                             <span class="invalid-feedback" role="alert">

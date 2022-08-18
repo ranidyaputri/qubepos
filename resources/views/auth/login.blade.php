@@ -2,16 +2,15 @@
 
 @section('content')
 <div class="container">
-    <section class="row justify-content-center align-items-center">
-        <div class="col-6 login-left">
+    <section class="row justify-content-center align-items-center auth">
+        <div class="col-6 col-md-6 col-sm-12 auth-left">
             <img src="{{('assets/img/login-img.png')}}" width="400px">
         </div>
-        <div class="col-6 login-right">
+        <div class="col-6 col-md-6 col-sm-12 auth-right">
             <div class="row justify-content-center align-items-center">
-                <div class="col-8">
+                <div class="col-9">
                     <div class="header">
-                        <img src="{{('assets/img/logotype.svg')}}" width="86px">
-                        <h2 class="mt-3">Masuk ke akun QubePOS</h2>
+                        <h2 class="mt-3 auth-txt">Masuk ke akun QubePOS</h2>
                     </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
